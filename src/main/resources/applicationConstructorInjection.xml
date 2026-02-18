@@ -13,7 +13,7 @@
 
     <!-- Car bean using constructor injection -->
     <bean id="myCar" class="car.example.constructor.injection.Car">
-        <property name="specification" value="carSpecification"/>
+        <property name="specification" ref="carSpecification"/>
     </bean>
 
 </beans>

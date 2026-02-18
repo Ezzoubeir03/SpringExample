@@ -1,6 +1,6 @@
 package com.loose.coupling;
 
-import com.loose.coupling.UserDataProvider; // ← Import from loose.coupling!
+import com.loose.coupling.UserDataProvider;
 
 public class UserManager {
     private UserDataProvider UserDataProvider;

@@ -1,15 +1,16 @@
 package com.ioc.coupling;
+
 import com.ioc.coupling.UserDataProvider;
+
 public class UserManager {
-    private com.loose.coupling.UserDataProvider userDataProvider;
 
-    public UserManager(UserDataProvider UserDataProvider) {
+    private UserDataProvider userDataProvider;
 
-        this.UserDataProvider = UserDataProvider;
+    public UserManager(UserDataProvider userDataProvider) {
+        this.userDataProvider = userDataProvider;
     }
 
-    public String getUserInfo(){
-
-        return UserDataProvider.getUserDetails();
+    public String getUserInfo() {
+        return userDataProvider.getUserDetails();
     }
 }
