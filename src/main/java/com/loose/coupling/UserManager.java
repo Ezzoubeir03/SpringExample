@@ -1,16 +1,15 @@
 package com.loose.coupling;
 
-import com.tight.coupling.UserDatabase;
+import com.loose.coupling.UserDataProvider; // ← Import from loose.coupling!
 
 public class UserManager {
-    private UserDataProvider userDataProvider;
+    private UserDataProvider UserDataProvider;
 
     public UserManager(UserDataProvider userDataProvider) {
-        this.userDataProvider = userDataProvider;
+        this.UserDataProvider = userDataProvider;
     }
 
-    public String getUserInfo(){
-
-        return userDataProvider.getUserDetails();
+    public String getUserInfo() {
+        return UserDataProvider.getUserDetails();
     }
 }
